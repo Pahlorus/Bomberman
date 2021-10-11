@@ -42,6 +42,7 @@ public interface IBlock : IDestroyable
 
 public interface IPerson : IDestroyable
 {
+    Vector2 Pos { get; set; }
     Transform Transform { get; }
     BoxCollider2D Collider { get; }
 }

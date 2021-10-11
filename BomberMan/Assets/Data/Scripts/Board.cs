@@ -16,8 +16,8 @@ public class Board : MonoBehaviour
     public float BlockSizeX;
     public float BlockSizeY;
 
-    public float ShiftX;
-    public float ShiftY;
+    public static float ShiftX;
+    public static float ShiftY;
 
     [Header("SettingsData")]
     public BoardConfig Config;
@@ -69,7 +69,7 @@ public class Board : MonoBehaviour
                 if (x == 0 && y == 11)
                 {
                     var hero = EntityManager.Instance.GetHero(this.transform);
-                    hero.Transform.position = pos;
+                    hero.Pos = hero.Transform.position = pos;
                 }
                 else
                 {

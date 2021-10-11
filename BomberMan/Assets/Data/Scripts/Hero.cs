@@ -7,7 +7,7 @@ public class Hero : Person
     public void SetBomb()
     {
         var bomb = EntityManager.Instance.GetBomb();
-        bomb.SetBomb(transform.position);
+        bomb.SetBomb(Pos);
     }
 
     public void Update()
