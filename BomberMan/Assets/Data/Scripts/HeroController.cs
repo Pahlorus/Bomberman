@@ -2,6 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 
+public enum ObjectTags {HERO = 1, WALL = 2 }
 public enum Direction { NONE, LEFT, RIGHT, TOP, BOTTOM }
 
 
@@ -58,6 +59,8 @@ public class HeroController : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         Stop();
+        var tag = collision.gameObject.tag.GetTag();
+
     }
 
     private void Stop()

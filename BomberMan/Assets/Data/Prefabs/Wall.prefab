@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1212274051682530452}
   - component: {fileID: 8641382700418290271}
   - component: {fileID: 3751820219817080798}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,6 +47,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -118,9 +119,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7622649629822403774}
   - component: {fileID: 8175457687784029076}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: WALL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

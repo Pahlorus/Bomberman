@@ -101,7 +101,6 @@ public abstract class PersonFactory<T> : ScriptableObject, ICreatePerson<T> wher
     {
         return Instantiate(pref, container);
     }
-
 }
 
 [CreateAssetMenu(fileName = nameof(WallFactory), menuName = "ScriptableObjects/Factory/" + nameof(WallFactory))]

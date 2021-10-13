@@ -5,12 +5,14 @@ using UnityEngine;
 
 public abstract class Person : MonoBehaviour, IPerson, IMoving
 {
+    [SerializeField] private int _health;
+
     [SerializeField] private BoxCollider2D _collider;
     [SerializeField] private HeroController _controller;
 
     public int Damage => throw new System.NotImplementedException();
 
-    public int Health => throw new System.NotImplementedException();
+    public int Health => _health;
 
     public int Speed => throw new System.NotImplementedException();
 
@@ -26,7 +28,7 @@ public abstract class Person : MonoBehaviour, IPerson, IMoving
 
     public void Destroy()
     {
-        throw new System.NotImplementedException();
+        Destroy(gameObject);
     }
 
     public virtual int GetDamage()
@@ -39,8 +41,10 @@ public abstract class Person : MonoBehaviour, IPerson, IMoving
         throw new System.NotImplementedException();
     }
 
-    public virtual void SetDamage(int health)
+    public virtual void SetDamage(int damage)
     {
-        throw new System.NotImplementedException();
+        _health -= damage;
+        if (_health <= 0) Destroy();
+
     }
 }

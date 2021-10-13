@@ -8,7 +8,7 @@ using UnityEngine;
 public interface IDestroyable
 {
     int Health { get; }
-    void SetDamage(int health);
+    void SetDamage(int damage);
     void Destroy();
 
 }

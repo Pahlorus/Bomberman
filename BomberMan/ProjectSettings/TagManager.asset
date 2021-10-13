@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UNDEFINED
+  - OTHER
+  - WALL
+  - OBSTACLE
+  - HERO
+  - ENEMY
   layers:
   - Default
   - TransparentFX
@@ -11,13 +17,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
   - Wall
+  - Obstacle
   - Hero
   - Enemy
-  - Debris
-  - Bomb
+  - 
+  - 
+  - 
   - 
   - 
   - 
